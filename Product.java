@@ -1,4 +1,3 @@
-package com.company;
 
 import java.util.Date;
 
@@ -18,8 +17,5 @@ public class Product implements StoringItem {
     }
 
     @Override
-    public long untilExpiration() {
-        return (expiration.getTime()-System.currentTimeMillis())/(1000*3600*24);
-
-    }
+    public long untilExpiration() {return (expiration.getTime()-System.currentTimeMillis())/(1000*3600*24);}
 }

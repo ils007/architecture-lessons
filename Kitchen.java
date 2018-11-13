@@ -1,4 +1,3 @@
-package com.company;
 
 import java.util.Date;
 
@@ -16,5 +15,9 @@ public class Kitchen implements StoragePlace {
     @Override
     public Operation createOperation() {
         return null;
+    }
+
+    @Override
+    public Instrument createInstrument() {return new CookInstrument();
     }
 }

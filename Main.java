@@ -1,5 +1,4 @@
-package com.company;
-
+import java.io.IOException;
 import java.util.Date;
 
 public class Main {
@@ -10,6 +9,13 @@ public class Main {
         System.out.println(si.untilExpiration());
         Operation op=kitchen.createOperation();
         System.out.println(op);
+        Instrument ins=kitchen.createInstrument();
+        ins.use();
+        try {
+            Aftershopper.scanBill("1.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
     }
