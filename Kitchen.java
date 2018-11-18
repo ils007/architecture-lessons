@@ -14,7 +14,7 @@ public class Kitchen implements StoragePlace {
 
     @Override
     public Operation createOperation() {
-        return null;
+        return new Recipe();
     }
 
     @Override

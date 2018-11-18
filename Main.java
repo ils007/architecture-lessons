@@ -8,6 +8,7 @@ public class Main {
         StoringItem si=kitchen.createItem("кабачок",new Date(118,10,15));
         System.out.println(si.untilExpiration());
         Operation op=kitchen.createOperation();
+        op.add(new StoringItem[]{si,si}, new int[]{100,200});
         System.out.println(op);
         Instrument ins=kitchen.createInstrument();
         ins.use();

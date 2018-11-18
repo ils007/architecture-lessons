@@ -10,6 +10,8 @@ public class Product implements StoringItem {
         this.name = name;
         this.expiration = expiration;
     }
+    @Override
+    public String getName(){    return name;}
 
     @Override
     public boolean checkExpiration() {
